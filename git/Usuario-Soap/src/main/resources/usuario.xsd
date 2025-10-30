@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://itq.edu/soa" 
+xmlns:tns="http://itq.edu/soa" 
+elementFormDefault="qualified">
+
+	<element name="validarRequest">
+        <complexType>
+            <sequence>
+                <element name="nombreUsuario" type="string"/>
+                <element name="password" type="string"/>
+                 </sequence>
+        </complexType>
+    </element>
+
+	<element name="validarResponse">
+        <complexType>
+            <sequence>
+                <element name="esValido" type="boolean"/> 
+                
+                <element name="ID" type="string"/> 
+                
+               
+            </sequence>
+        </complexType>
+    </element>
+</schema>
