@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://perfil.com/"
+        xmlns:tns="http://perfil.com/"
+        elementFormDefault="qualified">
+
+  <element name="consultarPerfil">
+    <complexType>
+      <sequence>
+        <element name="username" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+
+  <element name="resultadoPerfil">
+    <complexType>
+      <sequence>
+        <element name="perfil" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+</schema>
